@@ -2,6 +2,7 @@
 <RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Administrative</fullName>
     <active>true</active>
+    <description>This record type will be used to store the administrative records for the contact. Every applicant contact created will be linked to this account record type.</description>
     <label>Administrative</label>
     <picklistValues>
         <picklist>AccountSource</picklist>

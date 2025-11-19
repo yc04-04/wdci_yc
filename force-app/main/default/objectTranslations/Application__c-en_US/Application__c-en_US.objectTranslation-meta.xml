@@ -8,5 +8,16 @@
         <plural>true</plural>
         <value>Applications</value>
     </caseValues>
+    <layouts>
+        <layout>Application Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- AppRecType --></label>
+        <name>AppRecType</name>
+    </recordTypes>
     <startsWith>Consonant</startsWith>
 </CustomObjectTranslation>
