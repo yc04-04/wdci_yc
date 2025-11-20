@@ -17,4 +17,5 @@
     <tabs>Application__c</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>Admissions_UtilityBar</utilityBar>
+    
 </CustomApplication>
