@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Academic_Program</fullName>
+    <active>true</active>
+    <description>This record type will be used to store the Undergraduate Program records.</description>
+    <label>Academic Program</label>
+   
+</RecordType>

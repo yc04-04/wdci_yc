@@ -72,16 +72,6 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Application_Status__c</fieldItem>
-                <identifier>RecordApplication_Status_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
                 <fieldItem>Record.Application_Type__c</fieldItem>
                 <identifier>RecordApplication_Type_cField</identifier>
             </fieldInstance>
@@ -174,6 +164,16 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Source__c</fieldItem>
                 <identifier>RecordSource_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Application_Status__c</fieldItem>
+                <identifier>RecordApplication_Status__cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-ee94da63-69da-42cb-b5bb-133570a66120</name>
