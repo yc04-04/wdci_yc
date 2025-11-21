@@ -1,0 +1,62 @@
+{
+  "appPageId" : "e6406e0d-3dc3-49f0-bf71-1602a5e2d2ad",
+  "componentName" : "siteforce:sldsTwoCol84SidebarFeaturedLayout",
+  "dataProviders" : [ ],
+  "id" : "556a53e3-30ad-446b-9bf1-3a3843f1d095",
+  "label" : "Home",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "bannerText" : "",
+        "bannerTextWithKnowledge" : "Explore other <a href=\"javascript:void(0)\" class=\"headlineArticles\">articles</a> and <a href=\"javascript:void(0)\" class=\"headlineDiscussions\">discussions</a> on this topic.",
+        "bannerTextWithoutKnowledge" : "Explore other <a href=\"javascript:void(0)\" class=\"headlineDiscussions\">discussions</a> on this topic.",
+        "pageType" : "",
+        "showSubTopics" : true,
+        "title" : "WELCOME TO RIO UNIVERSITY!",
+        "uniqueNameOrId" : ""
+      },
+      "componentName" : "forceCommunity:headline",
+      "id" : "fddf86c9-e683-49b5-84c9-68c3e6f7703c",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "76abe743-080d-460f-93cb-c09214e84d8c",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "id" : "c4af3843-391f-4a6d-a0ae-2077523aa34d",
+    "regionName" : "featured",
+    "type" : "region"
+  }, {
+    "id" : "880e3692-0298-43a3-8b03-0ed9293236f8",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "6c860316-5212-44e6-864e-7c4d2864fdce",
+    "regionName" : "sidebar",
+    "type" : "region"
+  }, {
+    "id" : "8eb74ec1-c147-4a05-94b7-845842a1c25c",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Home"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "113dbf9d-00de-4651-8f21-2f558759f70c",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "777d6555-6691-4b8c-a4ef-73b7248162d3",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "home"
+}
