@@ -32,7 +32,6 @@
         <field>Account.Description</field>
         <readable>false</readable>
     </fieldPermissions>
-
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.Fax</field>
@@ -48,7 +47,6 @@
         <field>Account.Jigsaw</field>
         <readable>false</readable>
     </fieldPermissions>
-
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.NumberOfEmployees</field>
@@ -100,7 +98,6 @@
         <field>Account.TickerSymbol</field>
         <readable>false</readable>
     </fieldPermissions>
-
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.Type</field>
@@ -111,7 +108,6 @@
         <field>Account.Website</field>
         <readable>false</readable>
     </fieldPermissions>
-
     <fieldPermissions>
         <editable>true</editable>
         <field>Application_Requirements__c.Requirement_Type__c</field>
@@ -238,7 +234,9 @@
         <viewAllFields>false</viewAllFields>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
-            <objectPermissions>
+
+        <objectPermissions>
+
         <allowCreate>false</allowCreate>
         <allowDelete>false</allowDelete>
         <allowEdit>true</allowEdit>
