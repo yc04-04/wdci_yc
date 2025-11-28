@@ -7,7 +7,7 @@
     </applicationVisibilities>
     <classAccesses>
         <apexClass>ReqController</apexClass>
-        <enabled>false</enabled>
+        <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
         <apexClass>TEstAppType</apexClass>
@@ -165,7 +165,7 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Application__c.Gender__c</field>
-        <readable>false</readable>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -175,7 +175,7 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Application__c.Highest_Education_Level__c</field>
-        <readable>false</readable>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -185,7 +185,7 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Application__c.Nationality__c</field>
-        <readable>false</readable>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -255,7 +255,7 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Contact.Gender__c</field>
-        <readable>false</readable>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -335,7 +335,7 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Program_Requirement__mdt.Requirement_Type__c</field>
-        <readable>false</readable>
+        <readable>true</readable>
     </fieldPermissions>
     <flowAccesses>
         <enabled>false</enabled>

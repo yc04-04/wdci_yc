@@ -440,12 +440,6 @@
             <targetReference>GetAppreq</targetReference>
         </connector>
         <inputAssignments>
-            <field>Applied_Program__c</field>
-            <value>
-                <elementReference>UnderProgram</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
             <field>Contact__c</field>
             <value>
                 <elementReference>ContactFormula</elementReference>

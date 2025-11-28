@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Layout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <excludeButtons>OpenSlackRecordChannel</excludeButtons>
     <excludeButtons>Submit</excludeButtons>
     <layoutSections>
         <customLabel>false</customLabel>
@@ -245,7 +246,6 @@
     </quickActionList>
     <relatedLists>
         <fields>NAME</fields>
-        <fields>Verified__c</fields>
         <relatedList>Application_Requirements__c.Application__c</relatedList>
     </relatedLists>
     <relatedLists>
@@ -257,7 +257,7 @@
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
-        <masterLabel>00hdi000002k8iz</masterLabel>
+        <masterLabel>00hdi000002q1ri</masterLabel>
         <sizeX>4</sizeX>
         <sizeY>0</sizeY>
         <summaryLayoutStyle>Default</summaryLayoutStyle>

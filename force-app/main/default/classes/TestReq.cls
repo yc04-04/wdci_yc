@@ -3,14 +3,12 @@ public class TestReq {
 
     @TestSetup
     static void setupData() {
-        // Create Accounts
         List<Account> accs = new List<Account>{
             new Account(Name='DomesticAcc'),
             new Account(Name='IntlAcc')
         };
         insert accs;
 
-        // Create Contacts using valid picklist values
         List<Contact> contacts = new List<Contact>{
             new Contact(LastName='DomesticUser', Nationality__c='Malaysian', AccountId=accs[0].Id),
             new Contact(LastName='IntlUser', Nationality__c='Singaporean', AccountId=accs[1].Id)
