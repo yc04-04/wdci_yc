@@ -1,11 +1,11 @@
 {
-  "appPageId" : "e6406e0d-3dc3-49f0-bf71-1602a5e2d2ad",
+  "appPageId" : "13a14d27-67f4-4a96-a552-9b1ab2a02435",
   "componentName" : "siteforce:sldsOneColLayout",
   "dataProviders" : [ ],
-  "id" : "7dabeee4-6b14-4d3c-b4bf-6dfdf3b6c1bf",
+  "id" : "5130e3bb-ba23-4004-9a3f-c6e38c8b613b",
   "label" : "File Related List",
   "regions" : [ {
-    "id" : "231b9dd2-51e7-477c-bcf6-2c99dd5e1fb1",
+    "id" : "ec290b18-d87f-48bd-8d8c-927e239ceef6",
     "regionName" : "header",
     "type" : "region"
   }, {
@@ -20,16 +20,16 @@
         "showRowNumbers" : true
       },
       "componentName" : "forceCommunity:relatedList",
-      "id" : "c4d7bc00-103c-470a-a748-753c1033ab32",
+      "id" : "cd0434c1-05f3-49e5-a413-4107d04c689b",
       "renderPriority" : "NEUTRAL",
       "renditionMap" : { },
       "type" : "component"
     } ],
-    "id" : "c3844e84-d8e7-47b6-b7f4-512442534bcd",
+    "id" : "bae8166e-dd85-4235-a8ac-1783b5267876",
     "regionName" : "content",
     "type" : "region"
   }, {
-    "id" : "e99f61b8-436a-4c10-a2bd-3b28b1fd730e",
+    "id" : "dc6f22be-1f1c-4251-81b4-3a2e3fb4bb24",
     "regionName" : "footer",
     "type" : "region"
   } ],

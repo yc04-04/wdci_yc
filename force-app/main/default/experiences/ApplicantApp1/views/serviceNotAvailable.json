@@ -1,8 +1,8 @@
 {
-  "appPageId" : "e6406e0d-3dc3-49f0-bf71-1602a5e2d2ad",
+  "appPageId" : "13a14d27-67f4-4a96-a552-9b1ab2a02435",
   "componentName" : "siteforce:sldsOneColLayout",
   "dataProviders" : [ ],
-  "id" : "747f8fda-cc28-4224-80d2-fd2669bd7a0a",
+  "id" : "c8e14e80-2bc5-4b87-8516-b7a8dd0e723f",
   "label" : "Service Not Available",
   "regions" : [ {
     "components" : [ {
@@ -10,12 +10,12 @@
         "richTextValue" : "<div style='display: flex; align-items: center; flex-direction: column; margin: 60px 25px 40px 25px;'><div style='background: url(/sfsites/assets/Images/serviceNotAvailable/serviceNotAvailable.svg) center no-repeat; background-size: contain; height: 331px; width: 100%; max-width: 538px;'></div></div><div style='margin: 0 25px; text-align: center;'><h1><b style='font-size: 2em'>Looks like the site is temporarily unavailable</b></h1><br/><p><span style='font-size: 1.5em;'>Please try again in a bit.</span></p></div>"
       },
       "componentName" : "forceCommunity:htmlBlock",
-      "id" : "4783e56d-3732-4c3b-b9ff-72157a0564cd",
+      "id" : "9b9bfc0c-499b-4804-a269-fda545af0123",
       "renderPriority" : "NEUTRAL",
       "renditionMap" : { },
       "type" : "component"
     } ],
-    "id" : "713dd817-5649-4af4-b038-99be7c285325",
+    "id" : "149bda79-1ab0-431e-ba34-9ed52af788db",
     "regionName" : "content",
     "type" : "region"
   } ],

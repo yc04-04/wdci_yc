@@ -1,9 +1,9 @@
 {
-  "activeViewId" : "2f267c24-afb7-40d6-bad3-e0e5264406e9",
-  "appPageId" : "e6406e0d-3dc3-49f0-bf71-1602a5e2d2ad",
+  "activeViewId" : "f22ff48b-59b5-4fc3-97c0-c1dc6852b75e",
+  "appPageId" : "13a14d27-67f4-4a96-a552-9b1ab2a02435",
   "configurationTags" : [ ],
   "devName" : "Feed_Detail",
-  "id" : "d2111fa8-aeed-41f6-9cc4-12eb3487b0b6",
+  "id" : "72549b56-19be-4875-a6c7-7b3e30e43771",
   "label" : "Feed Detail",
   "routeType" : "feeditem-generic",
   "type" : "route",

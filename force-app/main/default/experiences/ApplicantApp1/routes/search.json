@@ -1,9 +1,9 @@
 {
-  "activeViewId" : "a545baa9-d1ed-4ad3-9fbf-5df8ec26cdd0",
-  "appPageId" : "e6406e0d-3dc3-49f0-bf71-1602a5e2d2ad",
+  "activeViewId" : "1e1deb81-d9c6-4614-85b5-bd78ba5e6802",
+  "appPageId" : "13a14d27-67f4-4a96-a552-9b1ab2a02435",
   "configurationTags" : [ ],
   "devName" : "Search",
-  "id" : "3ee55df5-025b-49c6-bc37-a0d77c3ceed0",
+  "id" : "70bb9dc8-dd32-4110-a883-76fbdd71b854",
   "label" : "Search",
   "pageAccess" : "UseParent",
   "routeType" : "global-search",

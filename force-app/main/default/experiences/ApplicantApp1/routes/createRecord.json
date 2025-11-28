@@ -1,9 +1,9 @@
 {
-  "activeViewId" : "cb80128a-d460-41c2-bf31-2b0e05fcf299",
-  "appPageId" : "e6406e0d-3dc3-49f0-bf71-1602a5e2d2ad",
+  "activeViewId" : "7deaf6d5-ccda-4981-a577-9be23d24dfb2",
+  "appPageId" : "13a14d27-67f4-4a96-a552-9b1ab2a02435",
   "configurationTags" : [ ],
   "devName" : "Create_Record",
-  "id" : "33139f2f-da1e-45b9-99bb-cbce9eb0e938",
+  "id" : "dbb4dbad-7e8a-466b-8a30-20c50b1b47c9",
   "label" : "Create Record",
   "routeType" : "createrecord",
   "type" : "route",

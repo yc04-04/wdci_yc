@@ -2,12 +2,260 @@
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <apiVersion>65.0</apiVersion>
     <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>Assignment_1</name>
+        <label>Assignment 1</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>DOmIDdsdsd</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>AppReqLoop.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>AppReqLoop</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assignment_2</name>
+        <label>Assignment 2</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>DomesticTrans</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>AppReqLoop.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>AppReqLoop</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assignment_3</name>
+        <label>Assignment 3</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>DomesticHighSchool</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>AppReqLoop.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>AppReqLoop</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assignment_4</name>
+        <label>Assignment 4</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>InterPassport</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>AppReqLoop.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>AppReqLoop</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assignment_7</name>
+        <label>Assignment 7</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>InterIE</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>AppReqLoop.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>AppReqLoop</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>HighsInter</name>
+        <label>HighsInter</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>InterHighS</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>AppReqLoop.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>AppReqLoop</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>InterTranscipts</name>
+        <label>InterTranscipts</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>InterTranscp</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>AppReqLoop.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>AppReqLoop</targetReference>
+        </connector>
+    </assignments>
+    <choices>
+        <name>Source</name>
+        <choiceText>Source</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Source</stringValue>
+        </value>
+    </choices>
     <customProperties>
         <name>ScreenProgressIndicator</name>
         <value>
             <stringValue>{&quot;location&quot;:&quot;top&quot;,&quot;type&quot;:&quot;simple&quot;}</stringValue>
         </value>
     </customProperties>
+    <decisions>
+        <name>Decision_3</name>
+        <label>Decision 3</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>Assignment_7</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>DomesticID</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>AppReqLoop.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>ID</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assignment_1</targetReference>
+            </connector>
+            <label>DomesticID</label>
+        </rules>
+        <rules>
+            <name>DomesticTranscript</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>AppReqLoop.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Transcript</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>AppReqLoop.Requirement_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Domestic</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assignment_2</targetReference>
+            </connector>
+            <label>DomesticTranscript</label>
+        </rules>
+        <rules>
+            <name>DomesticHigh</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>AppReqLoop.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>High School Graduation Certificate</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>AppReqLoop.Requirement_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Domestic</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assignment_3</targetReference>
+            </connector>
+            <label>DomesticHigh</label>
+        </rules>
+        <rules>
+            <name>InterPass</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>AppReqLoop.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Passport</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assignment_4</targetReference>
+            </connector>
+            <label>InterPass</label>
+        </rules>
+        <rules>
+            <name>InterTransc</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>AppReqLoop.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Transcript</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>AppReqLoop.Requirement_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>International</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>InterTranscipts</targetReference>
+            </connector>
+            <label>InterTransc</label>
+        </rules>
+        <rules>
+            <name>InterHighSch</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>AppReqLoop.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>High School Graduation Certificate</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>AppReqLoop.Requirement_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>International</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>HighsInter</targetReference>
+            </connector>
+            <label>InterHighSch</label>
+        </rules>
+    </decisions>
     <decisions>
         <name>ReqType</name>
         <label>ReqType</label>
@@ -24,13 +272,38 @@
                 <leftValueReference>Nationality</leftValueReference>
                 <operator>EqualTo</operator>
                 <rightValue>
-                    <stringValue>Malaysia</stringValue>
+                    <stringValue>Malaysian</stringValue>
                 </rightValue>
             </conditions>
             <connector>
                 <targetReference>DomType</targetReference>
             </connector>
             <label>Domestic</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>WithorNoContact</name>
+        <label>WithorNoContact</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>Create_App_Record</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>WithContact</defaultConnectorLabel>
+        <rules>
+            <name>WIthContact</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>GetCOntact.Id</leftValueReference>
+                <operator>IsBlank</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Contact</targetReference>
+            </connector>
+            <label>WIthoutContact</label>
         </rules>
     </decisions>
     <dynamicChoiceSets>
@@ -66,8 +339,32 @@
         <picklistObject>Application__c</picklistObject>
     </dynamicChoiceSets>
     <environments>Default</environments>
+    <formulas>
+        <name>CheckContact</name>
+        <dataType>Boolean</dataType>
+        <expression>ISBLANK({!GetCOntact.Id})</expression>
+    </formulas>
+    <formulas>
+        <name>ContactFormula</name>
+        <dataType>String</dataType>
+        <expression>IF(ISBLANK({!GetCOntact.Id}), {!Contact.Id}, {!GetCOntact.Id})</expression>
+    </formulas>
     <interviewLabel>NewAppFlow {!$Flow.CurrentDateTime}</interviewLabel>
-    <label>NewAppFlow</label>
+    <label>NewAppFlow(WithDecision)</label>
+    <loops>
+        <name>AppReqLoop</name>
+        <label>AppReqLoop</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <collectionReference>GetAppreq</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Decision_3</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>ReqType</targetReference>
+        </noMoreValuesConnector>
+    </loops>
     <processMetadataValues>
         <name>BuilderType</name>
         <value>
@@ -88,43 +385,8 @@
     </processMetadataValues>
     <processType>Flow</processType>
     <recordCreates>
-        <name>Create_App_Record</name>
-        <label>Create App Record</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
-        <connector>
-            <targetReference>EndText</targetReference>
-        </connector>
-        <inputAssignments>
-            <field>High_School_Name__c</field>
-            <value>
-                <elementReference>High_School_Name</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Highest_Education_Level__c</field>
-            <value>
-                <elementReference>Highest_Education_Level</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Name</field>
-            <value>
-                <elementReference>AppName.lastName</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Source__c</field>
-            <value>
-                <elementReference>How_do_you_know_about_us</elementReference>
-            </value>
-        </inputAssignments>
-        <object>Application__c</object>
-        <storeOutputAutomatically>true</storeOutputAutomatically>
-    </recordCreates>
-    <recordCreates>
-        <name>Create_Contact_Record</name>
-        <label>Create Contact Record</label>
+        <name>Contact</name>
+        <label>Contact</label>
         <locationX>0</locationX>
         <locationY>0</locationY>
         <connector>
@@ -140,12 +402,6 @@
             <field>Email</field>
             <value>
                 <elementReference>AppEmail.value</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>FirstName</field>
-            <value>
-                <elementReference>AppName.firstName</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -175,6 +431,95 @@
         <object>Contact</object>
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordCreates>
+    <recordCreates>
+        <name>Create_App_Record</name>
+        <label>Create App Record</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>GetAppreq</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Applied_Program__c</field>
+            <value>
+                <elementReference>UnderProgram</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Contact__c</field>
+            <value>
+                <elementReference>ContactFormula</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>High_School_Name__c</field>
+            <value>
+                <elementReference>High_School_Name</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Highest_Education_Level__c</field>
+            <value>
+                <elementReference>Highest_Education_Level</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Name</field>
+            <value>
+                <elementReference>AppName.lastName</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Source__c</field>
+            <value>
+                <elementReference>How_do_you_know_about_us</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Application__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordLookups>
+        <name>GetAppreq</name>
+        <label>GetAppreq</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>AppReqLoop</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Application__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Create_App_Record.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>Application_Requirements__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>GetCOntact</name>
+        <label>GetCOntact</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>WithorNoContact</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$User.ContactId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Contact</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
     <screens>
         <name>DomType</name>
         <label>DomType</label>
@@ -184,7 +529,7 @@
         <allowFinish>true</allowFinish>
         <allowPause>false</allowPause>
         <connector>
-            <targetReference>Create_Contact_Record</targetReference>
+            <targetReference>EndText</targetReference>
         </connector>
         <fields>
             <name>DoType</name>
@@ -200,13 +545,75 @@
             </styleProperties>
         </fields>
         <fields>
-            <name>DomUpload</name>
+            <name>DomID</name>
             <extensionName>forceContent:fileUpload</extensionName>
             <fieldType>ComponentInstance</fieldType>
             <inputParameters>
                 <name>label</name>
                 <value>
-                    <elementReference>Domestic</elementReference>
+                    <stringValue>ID</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>recordId</name>
+                <value>
+                    <elementReference>DOmIDdsdsd</elementReference>
+                </value>
+            </inputParameters>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <storeOutputAutomatically>true</storeOutputAutomatically>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <fields>
+            <name>DomTrans</name>
+            <extensionName>forceContent:fileUpload</extensionName>
+            <fieldType>ComponentInstance</fieldType>
+            <inputParameters>
+                <name>label</name>
+                <value>
+                    <stringValue>Transcript</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>recordId</name>
+                <value>
+                    <elementReference>DomesticTrans</elementReference>
+                </value>
+            </inputParameters>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <storeOutputAutomatically>true</storeOutputAutomatically>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <fields>
+            <name>DomHigh</name>
+            <extensionName>forceContent:fileUpload</extensionName>
+            <fieldType>ComponentInstance</fieldType>
+            <inputParameters>
+                <name>label</name>
+                <value>
+                    <stringValue>High School Graduation Certificate</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>recordId</name>
+                <value>
+                    <elementReference>DomesticHighSchool</elementReference>
                 </value>
             </inputParameters>
             <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
@@ -258,7 +665,7 @@
         <allowFinish>true</allowFinish>
         <allowPause>false</allowPause>
         <connector>
-            <targetReference>Create_Contact_Record</targetReference>
+            <targetReference>EndText</targetReference>
         </connector>
         <fields>
             <name>IntType</name>
@@ -280,7 +687,103 @@
             <inputParameters>
                 <name>label</name>
                 <value>
-                    <elementReference>InterUpload.label</elementReference>
+                    <stringValue>Passport</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>multiple</name>
+                <value>
+                    <booleanValue>true</booleanValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>recordId</name>
+                <value>
+                    <elementReference>InterPassport</elementReference>
+                </value>
+            </inputParameters>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <storeOutputAutomatically>true</storeOutputAutomatically>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <fields>
+            <name>InternaTrans</name>
+            <extensionName>forceContent:fileUpload</extensionName>
+            <fieldType>ComponentInstance</fieldType>
+            <inputParameters>
+                <name>recordId</name>
+                <value>
+                    <elementReference>InterTranscp</elementReference>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>label</name>
+                <value>
+                    <stringValue>Transcript</stringValue>
+                </value>
+            </inputParameters>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <storeOutputAutomatically>true</storeOutputAutomatically>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <fields>
+            <name>InterhighSC</name>
+            <extensionName>forceContent:fileUpload</extensionName>
+            <fieldType>ComponentInstance</fieldType>
+            <inputParameters>
+                <name>recordId</name>
+                <value>
+                    <elementReference>InterHighS</elementReference>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>label</name>
+                <value>
+                    <stringValue>High School Graduation Certificate</stringValue>
+                </value>
+            </inputParameters>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <storeOutputAutomatically>true</storeOutputAutomatically>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <fields>
+            <name>InterIET</name>
+            <extensionName>forceContent:fileUpload</extensionName>
+            <fieldType>ComponentInstance</fieldType>
+            <inputParameters>
+                <name>label</name>
+                <value>
+                    <stringValue>IELTS Transcript</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>recordId</name>
+                <value>
+                    <elementReference>InterIE</elementReference>
                 </value>
             </inputParameters>
             <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
@@ -308,18 +811,12 @@
         <allowFinish>true</allowFinish>
         <allowPause>false</allowPause>
         <connector>
-            <targetReference>ReqType</targetReference>
+            <targetReference>GetCOntact</targetReference>
         </connector>
         <fields>
             <name>AppName</name>
             <extensionName>flowruntime:name</extensionName>
             <fieldType>ComponentInstance</fieldType>
-            <inputParameters>
-                <name>lastName</name>
-                <value>
-                    <booleanValue>true</booleanValue>
-                </value>
-            </inputParameters>
             <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
             <isRequired>true</isRequired>
             <storeOutputAutomatically>true</storeOutputAutomatically>
@@ -494,7 +991,59 @@
             <targetReference>NewAppScreen</targetReference>
         </connector>
     </start>
-    <status>Active</status>
+    <status>Draft</status>
+    <variables>
+        <name>AppID</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>AppNameCollect</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>AppNameCont</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Application_Requirements__c</objectType>
+    </variables>
+    <variables>
+        <name>appNameconta</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Application_Requirements__c</objectType>
+    </variables>
+    <variables>
+        <name>AppReq</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Application_Requirements__c</objectType>
+    </variables>
+    <variables>
+        <name>DomesticHighSchool</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>DomesticTrans</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
     <variables>
         <name>DomesticType</name>
         <dataType>SObject</dataType>
@@ -504,11 +1053,86 @@
         <objectType>Application__c</objectType>
     </variables>
     <variables>
+        <name>DOmIDdsdsd</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
         <name>FirstNameField</name>
         <dataType>SObject</dataType>
         <isCollection>false</isCollection>
         <isInput>false</isInput>
         <isOutput>false</isOutput>
         <objectType>Application__c</objectType>
+    </variables>
+    <variables>
+        <name>InterHighS</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>InterIE</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>InterPassport</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>InterTranscp</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>ReqID</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>ReqName</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>RequirementList</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Application_Requirements__c</objectType>
+    </variables>
+    <variables>
+        <name>RequirementRow</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Application_Requirements__c</objectType>
+    </variables>
+    <variables>
+        <name>UnderProgram</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>Undergraduate Program</stringValue>
+        </value>
     </variables>
 </Flow>

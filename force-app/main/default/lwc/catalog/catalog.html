@@ -1,0 +1,28 @@
+<template>
+    <lightning-accordion active-section-name="Under">
+        
+        <lightning-accordion-section name="Under" label="Undergraduate Program">
+            <lightning-card title={isDomestic} > 
+                <template if:true={filteredRecords}>
+                    <ol type="1">
+                        <template for:each={filteredRecords} for:item="rec"> 
+                            <li key={rec.Id}>
+                                <p style="margin-left: 2%;">{rec.MasterLabel}</p>
+                            </li>
+                        </template>
+                    </ol>
+                </template>
+            </lightning-card>
+
+            <template if:false={filteredRecords}>
+                <p>No matching records.</p>
+            </template>
+        </lightning-accordion-section>
+        
+        <lightning-accordion-section name="Post" label="Postgraduate Program">
+                <p>No Requirement</p>
+        </lightning-accordion-section>
+        
+    </lightning-accordion>
+    
+    </template>

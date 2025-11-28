@@ -1,58 +1,42 @@
 {
-  "appPageId" : "e6406e0d-3dc3-49f0-bf71-1602a5e2d2ad",
+  "appPageId" : "13a14d27-67f4-4a96-a552-9b1ab2a02435",
   "componentName" : "siteforce:sldsOneColLayout",
   "dataProviders" : [ ],
-  "id" : "7581d167-1f5a-4039-9163-6f9d0c2b42d0",
+  "id" : "a84aa894-d4f1-4f2a-a7cb-06cb3ff3f6aa",
   "label" : "Record List",
   "regions" : [ {
-    "components" : [ {
-      "componentAttributes" : {
-        "bannerText" : "A place where you can view your application",
-        "bannerTextWithKnowledge" : "Explore other <a href=\"javascript:void(0)\" class=\"headlineArticles\">articles</a> and <a href=\"javascript:void(0)\" class=\"headlineDiscussions\">discussions</a> on this topic.",
-        "bannerTextWithoutKnowledge" : "Explore other <a href=\"javascript:void(0)\" class=\"headlineDiscussions\">discussions</a> on this topic.",
-        "pageType" : "",
-        "showSubTopics" : true,
-        "title" : "MY APPLICATION",
-        "uniqueNameOrId" : ""
-      },
-      "componentName" : "forceCommunity:headline",
-      "id" : "010e0038-ab54-4eb6-8e26-5704a15b12b7",
-      "renderPriority" : "NEUTRAL",
-      "renditionMap" : { },
-      "type" : "component"
-    } ],
-    "id" : "e13504a7-9084-466d-9ab0-90eb70093e87",
+    "id" : "f6edb410-13ec-4a1a-a20f-bee9839ea7b9",
     "regionName" : "header",
     "type" : "region"
   }, {
     "components" : [ {
       "componentAttributes" : {
-        "enableInlineEdit" : false,
-        "filterName" : "My_Application",
+        "enableInlineEdit" : true,
+        "filterName" : "{!filterId}",
         "layout" : "FULL",
         "pageSize" : 25,
-        "scope" : "Application__c",
-        "showActionBar" : false,
-        "showChartsPanel" : false,
-        "showDisplay" : "grid",
-        "showFilterPanel" : false,
+        "scope" : "{!objectName}",
+        "showActionBar" : true,
+        "showChartsPanel" : true,
+        "showDisplay" : "showall",
+        "showFilterPanel" : true,
         "showImageIcon" : true,
         "showManualRefreshButton" : true,
         "showObjectName" : true,
-        "showPinnedList" : false,
-        "showSearchBar" : false
+        "showPinnedList" : true,
+        "showSearchBar" : true
       },
       "componentName" : "forceCommunity:objectHome",
-      "id" : "8432b5fd-aa07-46b7-afe2-70d5dc1f5fde",
+      "id" : "a68b3b63-a036-46cc-806b-2839858329dd",
       "renderPriority" : "NEUTRAL",
       "renditionMap" : { },
       "type" : "component"
     } ],
-    "id" : "4bac0377-c513-4262-9bd8-9e985d5b84f3",
+    "id" : "4e92b394-d539-4ede-94e0-7f1ac8201460",
     "regionName" : "content",
     "type" : "region"
   }, {
-    "id" : "be1255ab-4250-4c12-9ca5-9e56008a5f46",
+    "id" : "c056701d-62d7-4fd7-b1cf-a6216a835076",
     "regionName" : "footer",
     "type" : "region"
   } ],

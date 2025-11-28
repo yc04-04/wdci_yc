@@ -1,11 +1,11 @@
 {
-  "appPageId" : "e6406e0d-3dc3-49f0-bf71-1602a5e2d2ad",
+  "appPageId" : "13a14d27-67f4-4a96-a552-9b1ab2a02435",
   "componentName" : "siteforce:sldsOneColLayout",
   "dataProviders" : [ ],
-  "id" : "67253e08-f284-4f28-9c19-61f6c7e1ff12",
+  "id" : "f69bbc0b-2157-4453-8edd-3e12839c6d30",
   "label" : "User Settings",
   "regions" : [ {
-    "id" : "74a29ce3-0ef0-41f6-ac40-bb04f69bd81a",
+    "id" : "2fbf00cd-dfa1-4d95-b6f6-5065e18406fd",
     "regionName" : "header",
     "type" : "region"
   }, {
@@ -35,16 +35,16 @@
         "settingsPageTitle" : "My Settings"
       },
       "componentName" : "forceCommunity:userSettingsCustomizable",
-      "id" : "3f895670-568b-42ce-b7ab-e84ebbdf468b",
+      "id" : "d449f2a8-edf2-48d3-b3fd-3cf78a7d2385",
       "renderPriority" : "NEUTRAL",
       "renditionMap" : { },
       "type" : "component"
     } ],
-    "id" : "ad9dc7f4-99ec-4938-ad58-c6954bd208bb",
+    "id" : "0a567440-f41e-4ca9-9558-b3bc2ceb8c93",
     "regionName" : "content",
     "type" : "region"
   }, {
-    "id" : "97bc9aa0-bf8a-4a71-a872-11fa6ed2123b",
+    "id" : "7a1f39a0-d142-4990-914b-455e19c0e84f",
     "regionName" : "footer",
     "type" : "region"
   } ],

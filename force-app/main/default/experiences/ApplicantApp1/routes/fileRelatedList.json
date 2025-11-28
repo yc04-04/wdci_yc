@@ -1,9 +1,9 @@
 {
-  "activeViewId" : "7dabeee4-6b14-4d3c-b4bf-6dfdf3b6c1bf",
-  "appPageId" : "e6406e0d-3dc3-49f0-bf71-1602a5e2d2ad",
+  "activeViewId" : "5130e3bb-ba23-4004-9a3f-c6e38c8b613b",
+  "appPageId" : "13a14d27-67f4-4a96-a552-9b1ab2a02435",
   "configurationTags" : [ ],
   "devName" : "File_Related_List",
-  "id" : "09f389ca-fc95-48c7-a51f-b207f2c05f7f",
+  "id" : "7d9f6942-e90d-4c8b-a09f-71c65062b907",
   "label" : "File Related List",
   "routeType" : "relatedlist-069",
   "type" : "route",

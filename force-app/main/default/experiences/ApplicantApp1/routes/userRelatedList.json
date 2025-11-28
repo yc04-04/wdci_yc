@@ -1,9 +1,9 @@
 {
-  "activeViewId" : "966b79a3-4acc-4e2d-91e9-81ea53f2e843",
-  "appPageId" : "e6406e0d-3dc3-49f0-bf71-1602a5e2d2ad",
+  "activeViewId" : "015ef49d-9111-4197-8778-2263aaeccaa2",
+  "appPageId" : "13a14d27-67f4-4a96-a552-9b1ab2a02435",
   "configurationTags" : [ ],
   "devName" : "User_Related_List",
-  "id" : "68fc715f-dd6d-4e39-b3ba-c831dad6aec5",
+  "id" : "561358b4-1757-4453-aecf-c1f9f2c454c1",
   "label" : "User Related List",
   "routeType" : "relatedlist-005",
   "type" : "route",

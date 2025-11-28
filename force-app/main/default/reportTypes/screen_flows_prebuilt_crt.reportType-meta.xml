@@ -76,11 +76,6 @@
             <field>FlowNamespace</field>
             <table>FlowInterviewLog</table>
         </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>FlowLabel</field>
-            <table>FlowInterviewLog</table>
-        </columns>
         <masterLabel>Flow Interview Logs</masterLabel>
     </sections>
     <sections>
@@ -132,11 +127,6 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>ElementDurationInMinutes</field>
-            <table>FlowInterviewLog.FlowInterviewLogs</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>ElementLabel</field>
             <table>FlowInterviewLog.FlowInterviewLogs</table>
         </columns>
         <masterLabel>Flow Interview Log Entries</masterLabel>

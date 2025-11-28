@@ -1,9 +1,9 @@
 {
-  "activeViewId" : "6cdb22f4-3927-4a3b-a62e-f834e1e227a3",
-  "appPageId" : "e6406e0d-3dc3-49f0-bf71-1602a5e2d2ad",
+  "activeViewId" : "8e4b4556-5aa7-40fe-9c98-8e3fbb88f04b",
+  "appPageId" : "13a14d27-67f4-4a96-a552-9b1ab2a02435",
   "configurationTags" : [ ],
   "devName" : "File_Detail",
-  "id" : "ee45b5a6-9369-42e6-b7e2-b9b650f38d53",
+  "id" : "4b60c510-1b17-4a33-8f53-c267373b2d91",
   "label" : "File Detail",
   "routeType" : "detail-069",
   "type" : "route",

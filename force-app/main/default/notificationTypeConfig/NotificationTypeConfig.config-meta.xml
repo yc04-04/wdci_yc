@@ -124,6 +124,13 @@
             <desktopEnabled>true</desktopEnabled>
             <mobileEnabled>false</mobileEnabled>
         </notificationChannels>
+        <notificationType>dpe_recalculate_notify</notificationType>
+    </notificationTypeSettings>
+    <notificationTypeSettings>
+        <notificationChannels>
+            <desktopEnabled>true</desktopEnabled>
+            <mobileEnabled>false</mobileEnabled>
+        </notificationChannels>
         <notificationType>eacforfsc_async_notify</notificationType>
     </notificationTypeSettings>
     <notificationTypeSettings>
@@ -146,13 +153,6 @@
             <mobileEnabled>false</mobileEnabled>
         </notificationChannels>
         <notificationType>event_reminder</notificationType>
-    </notificationTypeSettings>
-    <notificationTypeSettings>
-        <notificationChannels>
-            <desktopEnabled>true</desktopEnabled>
-            <mobileEnabled>true</mobileEnabled>
-        </notificationChannels>
-        <notificationType>feed_on_field_service</notificationType>
     </notificationTypeSettings>
     <notificationTypeSettings>
         <notificationChannels>
@@ -282,13 +282,6 @@
     </notificationTypeSettings>
     <notificationTypeSettings>
         <notificationChannels>
-            <desktopEnabled>true</desktopEnabled>
-            <mobileEnabled>false</mobileEnabled>
-        </notificationChannels>
-        <notificationType>security_center_alert</notificationType>
-    </notificationTypeSettings>
-    <notificationTypeSettings>
-        <notificationChannels>
             <desktopEnabled>false</desktopEnabled>
             <mobileEnabled>false</mobileEnabled>
         </notificationChannels>
@@ -335,5 +328,12 @@
             <mobileEnabled>false</mobileEnabled>
         </notificationChannels>
         <notificationType>voice_call_share</notificationType>
+    </notificationTypeSettings>
+    <notificationTypeSettings>
+        <notificationChannels>
+            <desktopEnabled>true</desktopEnabled>
+            <mobileEnabled>false</mobileEnabled>
+        </notificationChannels>
+        <notificationType>ya_contract_renewal_notify</notificationType>
     </notificationTypeSettings>
 </NotificationTypeConfig>

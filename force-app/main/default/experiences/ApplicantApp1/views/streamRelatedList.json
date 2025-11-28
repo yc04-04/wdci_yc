@@ -1,19 +1,19 @@
 {
-  "appPageId" : "e6406e0d-3dc3-49f0-bf71-1602a5e2d2ad",
+  "appPageId" : "13a14d27-67f4-4a96-a552-9b1ab2a02435",
   "componentName" : "siteforce:sldsOneColLayout",
   "dataProviders" : [ ],
-  "id" : "076a61e9-b7e3-4703-b4d3-e791235b8780",
+  "id" : "53b42c55-9425-42a7-b843-03f1babb89c5",
   "label" : "Stream Related List",
   "regions" : [ {
-    "id" : "333992d5-0e70-413a-ad66-2c6dd3caf0ef",
+    "id" : "5fcf7be3-d8de-4b33-9b58-f48643f091ed",
     "regionName" : "header",
     "type" : "region"
   }, {
-    "id" : "0bbc3cdc-9b4d-4c6d-bdd0-76928f37afdd",
+    "id" : "f2e2c1d0-793f-4edc-9374-018973334145",
     "regionName" : "content",
     "type" : "region"
   }, {
-    "id" : "894b049a-2147-4273-a63b-e1a55c49cabf",
+    "id" : "df0364f7-bf30-4b67-916a-f54075ac21d3",
     "regionName" : "footer",
     "type" : "region"
   } ],
