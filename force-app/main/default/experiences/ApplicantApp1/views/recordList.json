@@ -12,19 +12,19 @@
     "components" : [ {
       "componentAttributes" : {
         "enableInlineEdit" : true,
-        "filterName" : "{!filterId}",
+        "filterName" : "My_Application",
         "layout" : "FULL",
         "pageSize" : 25,
-        "scope" : "{!objectName}",
-        "showActionBar" : true,
-        "showChartsPanel" : true,
+        "scope" : "Application__c",
+        "showActionBar" : false,
+        "showChartsPanel" : false,
         "showDisplay" : "showall",
-        "showFilterPanel" : true,
+        "showFilterPanel" : false,
         "showImageIcon" : true,
-        "showManualRefreshButton" : true,
+        "showManualRefreshButton" : false,
         "showObjectName" : true,
         "showPinnedList" : true,
-        "showSearchBar" : true
+        "showSearchBar" : false
       },
       "componentName" : "forceCommunity:objectHome",
       "id" : "a68b3b63-a036-46cc-806b-2839858329dd",

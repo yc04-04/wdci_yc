@@ -1,19 +1,14 @@
 trigger ReqTrigger on Application__c (after insert) {
 
-    Set<Id> appIds = new Set<Id>();
-    for (Application__c app : Trigger.new) {
-        appIds.add(app.Id);
-    }
-
     List<Program_Requirement__mdt> domReqs = [
-        SELECT MasterLabel, Requirement_Type__c 
-        FROM Program_Requirement__mdt 
+        SELECT MasterLabel, Requirement_Type__c
+        FROM Program_Requirement__mdt
         WHERE Requirement_Type__c = 'Domestic'
     ];
 
     List<Program_Requirement__mdt> intlReqs = [
-        SELECT MasterLabel, Requirement_Type__c 
-        FROM Program_Requirement__mdt 
+        SELECT MasterLabel, Requirement_Type__c
+        FROM Program_Requirement__mdt
         WHERE Requirement_Type__c = 'International'
     ];
 
@@ -21,12 +16,11 @@ trigger ReqTrigger on Application__c (after insert) {
 
     for (Application__c app : Trigger.new) {
 
-
-        String appType = app.Application_Type__c;
+        String nationality = app.Nationality__c;
 
         List<Program_Requirement__mdt> selectedReqs;
 
-        if (appType == 'Domestic') {
+        if (nationality == 'Malaysian') {
             selectedReqs = domReqs;
         } else {
             selectedReqs = intlReqs;

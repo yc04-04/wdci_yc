@@ -3,7 +3,7 @@
     <fullName>Source__c</fullName>
     <businessStatus>Active</businessStatus>
     <label>Source</label>
-    <required>false</required>
+    <required>true</required>
     <securityClassification>Public</securityClassification>
     <trackTrending>false</trackTrending>
     <type>Picklist</type>

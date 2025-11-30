@@ -4,10 +4,18 @@
     <containerType>Network</containerType>
     <label>Default Navigation</label>
     <navigationMenuItem>
-        <label>Topics</label>
-        <position>0</position>
-        <publiclyAvailable>true</publiclyAvailable>
-        <target>ShowMoreTopics</target>
-        <type>NavigationalTopic</type>
+        <label>NEW APPLICATION</label>
+        <position>1</position>
+        <publiclyAvailable>false</publiclyAvailable>
+        <target>/flow/NewAppFlow</target>
+        <type>InternalLink</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <defaultListViewId>All</defaultListViewId>
+        <label>MY APPLICATION</label>
+        <position>2</position>
+        <publiclyAvailable>false</publiclyAvailable>
+        <target>Application__c</target>
+        <type>SalesforceObject</type>
     </navigationMenuItem>
 </NavigationMenu>
