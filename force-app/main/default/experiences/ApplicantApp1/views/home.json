@@ -1,0 +1,69 @@
+{
+  "appPageId" : "13a14d27-67f4-4a96-a552-9b1ab2a02435",
+  "componentName" : "siteforce:sldsTwoCol84SidebarFeaturedLayout",
+  "dataProviders" : [ ],
+  "id" : "d4b48e58-e7a4-42aa-9a12-d29720664677",
+  "label" : "Home",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "bannerText" : "",
+        "bannerTextWithKnowledge" : "Explore other <a href=\"javascript:void(0)\" class=\"headlineArticles\">articles</a> and <a href=\"javascript:void(0)\" class=\"headlineDiscussions\">discussions</a> on this topic.",
+        "bannerTextWithoutKnowledge" : "Explore other <a href=\"javascript:void(0)\" class=\"headlineDiscussions\">discussions</a> on this topic.",
+        "pageType" : "",
+        "showSubTopics" : true,
+        "title" : "WELCOME TO RIO UNIVERSITY!",
+        "uniqueNameOrId" : ""
+      },
+      "componentName" : "forceCommunity:headline",
+      "id" : "beb70617-05b8-44a4-a7f3-5743eba02a2c",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : { },
+      "componentName" : "c:catalog",
+      "id" : "e086f903-a825-4869-bf5b-cd7accbee10a",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "aa579307-a69a-4517-9b5c-9cfc3df14153",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "id" : "2dead458-3c43-4a9b-ba72-71cb3d5ebf20",
+    "regionName" : "featured",
+    "type" : "region"
+  }, {
+    "id" : "60510a3e-b285-4c20-a161-027cb2415f3f",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "4b637251-09f2-43a3-93d7-e361cc2078af",
+    "regionName" : "sidebar",
+    "type" : "region"
+  }, {
+    "id" : "cee63484-aa43-4d2d-a33b-da2f2c86340e",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Home"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "1e162afb-8fa0-4407-9b2f-c16b174bca8c",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "90522070-cccb-4d5f-b7d0-800ae138afca",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "home"
+}
